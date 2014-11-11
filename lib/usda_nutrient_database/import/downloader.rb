@@ -6,7 +6,7 @@ module UsdaNutrientDatabase
 
       attr_reader :directory, :version
 
-      def initialize(directory = 'tmp/usda', version = 'sr25')
+      def initialize(directory = 'tmp/usda', version = 'sr27')
         @directory = directory
         @version = version
       end
@@ -22,8 +22,8 @@ module UsdaNutrientDatabase
 
       def path
         [
-          'SP2UserFiles', 'Place', '12354500', 'Data', version.upcase,
-          'dnload', "#{version}.zip"
+          'SP2UserFiles', 'Place', '80400525', 'Data', version.upcase,
+          'dnload', "#{version}asc.zip"
         ].join('/')
       end
 
