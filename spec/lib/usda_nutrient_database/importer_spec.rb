@@ -6,7 +6,7 @@ describe UsdaNutrientDatabase::Importer do
   describe '#import' do
     before do
       stub_request(:get, /.*/).
-        to_return(body: File.read('spec/support/sr25.zip'))
+        to_return(body: File.read('spec/support/sr27.zip'))
       importer.import
     end
 
